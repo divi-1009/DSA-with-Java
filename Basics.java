@@ -1,6 +1,6 @@
 // All the basics of java are in this code file.
 // Revision
-import java.util.Scanner;
+import java.util.*;
 public class Basics {
     public static void main(String[] args) {
         try (// How to take input from user in java
