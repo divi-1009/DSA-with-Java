@@ -102,6 +102,34 @@ public class Patterns {
                 }
                 System.out.println();
             }
+            // 10 Solid Rhombus (Nested Loop)
+            System.out.print("Enter the number of rows:");
+            int l = sc.nextInt();
+            for(int i = 1; i <= l; i++){
+                //inner loop for spaces
+                for(int j = 1; j <= l-i; j++){
+                    System.out.print(" ");
+                }
+                //inner loop for stars
+                for(int j = 1; j <= l; j++){
+                    System.out.print("*"+" ");
+                }
+                System.out.println();
+            }
+            // 11. Number Pyramid (Nested Loop)
+            System.out.print("Enter the number of rows:");
+            int p = sc.nextInt();
+            for(int i = 1; i <= p; i++){
+                //inner loop for spaces
+                for(int j = 1; j <= p-i; j++){
+                    System.out.print(" ");
+                }
+                //inner loop for numbers
+                for(int j = 1; j <= i; j++){
+                    System.out.print(i+" ");
+                }
+                System.out.println();
+            }
         }
 
     }
