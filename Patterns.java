@@ -28,7 +28,7 @@ public class Patterns {
                 }
                 System.out.println();// ye next line ke liye hai
             }
-            // Half Pyramid (Nested Loop)
+            // 3. Half Pyramid (Nested Loop)
             System.out.print("Enter the number of rows:");
             int c = sc.nextInt();
             for(int i = 1; i <= c; i ++){
@@ -37,7 +37,7 @@ public class Patterns {
                 }
                 System.out.println();
             }
-            // Inverted Half Pyramid (Nested Loop)
+            // 4. Inverted Half Pyramid (Nested Loop)
              System.out.print("Enter the number of rows:");
             int d = sc.nextInt();
             for(int i = d; i >= 1; i --){
@@ -46,26 +46,59 @@ public class Patterns {
                 }
                 System.out.println();
             }
-            // Inverted Half Pyramid Rotated by 180 degrees (Nested Loop)
+            // 5. Inverted Half Pyramid Rotated by 180 degrees (Nested Loop)
             System.out.print("Enter the number of rows:");
             int e = sc.nextInt();
             for(int i =1; i <= e; i++){
                 //iner loop for spaces
-                for(int j = 1; j<=i; j++){
+                for(int j = 1; j<=e-i; j++){
                     System.out.print(" ");
                 }
                 //inner loop for stars
-                for(int j = 1; j <= e-i; j++){
-                    System.out.print("*"+" ");
+                for(int j = 1; j <= i; j++){
+                    System.out.print("*");
                 }
                 System.out.println();
             }
-            // Half Pyramid with Numbers (Nested Loop)
+            // 6. Half Pyramid with Numbers (Nested Loop)
             System.out.print("Enter the number of rows:");
             int f = sc.nextInt();
             for(int i = 1; i <= f; i ++){
                 for(int j = 1; j <= i; j++){
                     System.out.print(j+" ");
+                }
+                System.out.println();
+            }
+            // 7. Inverted Half Pyramid with Numbers (Nested Loop)
+            System.out.print("Enter the number of rows:");
+            int g = sc.nextInt();
+            for(int i = 1; i <= g; i++){
+                for(int j = 1; j <= g-i+1; j++){
+                    System.out.print(j+" ");
+                }
+                System.out.println();
+            }
+            // 8. Floyd's Triangle (Nested Loop)
+             System.out.print("Enter the number of rows:");
+            int h = sc.nextInt();
+            int number = 1;
+            for(int i = 1; i <= h; i++){
+                for(int j = 1; j <= i; j++){
+                    System.out.print(number+" ");
+                    number++;
+                }
+                System.out.println();
+            }
+            // 9. 0-1 Triangle (Nested Loop)
+            System.out.print("Enter the number of rows:");
+            int k = sc.nextInt();
+            for(int i = 1; i <= k; i++){
+                for(int j=1; j <= i; j++){
+                    if ((i+j)%2 ==0){
+                        System.out.print("1"+" ");
+                    }else{
+                        System.out.print("0"+" ");
+                    }
                 }
                 System.out.println();
             }
