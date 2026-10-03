@@ -6,3 +6,4 @@ public class Advance_Patterns {
             int n = sc.nextInt();
         }
     }
+}
